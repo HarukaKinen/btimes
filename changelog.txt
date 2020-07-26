@@ -1,0 +1,56 @@
+Version 2.2 Changelog
++ Add
+  Add Real-time Speed difference and Time difference
+  Add FirstJumpTick 
+  Add an option to turn on(off) checkpoint message
+  Add timerban
+  Add teleport zone
+  Add wipeplayer
+  Add multi-alias support for style
+  Add cursor zoning
+  Add built-in chat processor
+  Implement player status
+  Third-party finish message support
+  
+^ Improvement / Fix
+  Make hud customizable
+  Make checkpoint menu customizable
+  Fix wrong segmented mode timing in replay hud
+  Hud channel now has a static one to use
+  Fix checkpoint exploits (Thank you One & acer & blank!)
+  Some optimizations for checkpoint
+  Player can hide advertisements for himself now
+  Move topleft hud down a little bit when player is dead / spectating
+  Unrestrict movement when player is on a ladder or on ground
+  Fix speed difference bug
+  
+Version 2.1 Changelog
++ Add
+  Segmented mode
+  Replay file now saves MoveType & Flags & Weapon
+  Replay bots are faded away in distance
+  Add convars to control bot's behaviors
+  Add translation support for style
+  Add translation support for message
+  Add custom start position
+  Add a convars to control zone width
+  Add advertisements
+  Add reaction time for tas
+  Add discord support
+  
+^ Improvement / Fix
+  HidePlayer now hides everyone but your spectating target when you are spectator
+  Fix an issue that player can pause their in start zones when they're in TAS mode
+  Player's movement will be freeze when their TAS-frame is the last frame now
+  TAS can record player's MoveType, Flags, Targetname, Classname etc. 
+  Remove some useless messages like reward money for csgo
+  Custom notification messages (Joining server(team) / disconnecting)
+  Minor changes to hud
+  Minor changes to TimeFormatting
+  Rework Checkpoint menu (Based on Slidybat's)
+  Replay bots won't be "choked" when triggering a teleport
+  Rework Finish messages
+  Fix an issue that StopGunsounds doesn't work for csgo
+  Optimize cpu usage for CS:S server
+  Rework timer-help menu
+  RadioCommands are blocked now

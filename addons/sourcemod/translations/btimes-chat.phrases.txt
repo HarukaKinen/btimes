@@ -1,0 +1,167 @@
+"Phrases"
+{
+	"SmartMessage_ChatRank"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}Have another chat rank you want to use? You can change it by typing{3} !chatrank {4}."
+	}
+	
+	"SmartMessage_CustomChat"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}You have custom chat abilities and can enable them by typing{3} !ccname{4}."
+	}
+	
+	"SmartMessage_HideChat"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}Chat annoying you? You can disable it with{3} !hidechat{4}."
+	}
+	
+	"ReloadCR_NoAccess"
+	{
+		"en"		"[SM] You do not have access to this command."
+	}
+	
+	"ReloadCR_Succeed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Chat ranks reloaded."
+	}
+	
+	"RankMenu_Title"
+	{
+		"en"		"List of Attainable Chat Ranks\n "
+	}
+	
+	"Command_HideChat_NotLoaded"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your client settings have not been loaded yet."
+	}
+	
+	"Command_HideChat_Hide"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Chat is now invisible."
+	}
+	
+	"Command_HideChat_UnHide"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Chat is now visible."
+	}
+	
+	"CheckCC_Get"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}You have gained custom chat privileges! Type{3} !chatrank{4} to use it!"
+	}
+	
+	"CheckCC_Lost"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You have lost your custom chat privileges!"
+	}
+	
+	"ChatRank_Lost"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"en"		"{1}{2}You lost the chatrank {3}{4}{5}."
+	}
+	
+	"ChatRank_Get"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:s}"
+		"en"		"{1}{2}You gained the chatrank {3}{4}{5}!"
+	}
+	
+	"ChatRankMenu_Title"
+	{
+		"en"		"Select Chat Rank\n "
+	}
+	
+	"Custom Name Enabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom name setting enabled."
+	}
+	
+	"Custom Name Enabled Failed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom name setting enabled. However, you do not have the custom chat privileges to use it"
+	}
+	
+	"Custom Name Disabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom name setting disabled."
+	}
+	
+	"Custom Message Enabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom message setting enabled."
+	}
+	
+	"Custom Message Enabled Failed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom message setting enabled. However, you do not have the custom chat privileges to use it"
+	}
+	
+	"Custom Message Disabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom message setting disabled."
+	}
+	
+	"Custom Tag Enabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom clan tag setting enabled."
+	}
+	
+	"Custom Tag Enabled Failed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom clan tag setting enabled. However, you do not have the custom chat privileges to use it"
+	}
+	
+	"Custom Tag Disabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Custom clan tag setting disabled."
+	}
+	
+	"Change Rank"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"en"		"{1}{2}You changed your chat rank to {3}{4}{5}."
+	}
+	
+	"Change Custom Name"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1}{2}Custom chat name changed to {3}."
+	}
+	
+	"Change Custom Message"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1}{2}Custom chat message changed to {3}."
+	}
+	
+	"Change Custom Tag"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1}{2}Custom clan tag changed to {3}."
+	}
+	
+	"Change Custom Message Failed"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1}{2}Failed to change message color. ({3})"
+	}
+}

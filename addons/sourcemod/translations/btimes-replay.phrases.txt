@@ -1,0 +1,82 @@
+"Phrases"
+{
+	"Menu_Type"
+	{
+		"#format"	"{1:s}"
+ 		"en"		"Type: {1}"
+	}
+	
+	"Menu_Style"
+	{
+		"#format"	"{1:s}"
+ 		"en"		"Style: {1}"
+	}
+	
+	"Menu_Style_2"
+	{
+		"#format"	"{1:s}{2:s}"
+ 		"en"		"Style: {1}({2})"
+	}
+	
+	"Menu_Play"
+	{
+		"en"		"Play"
+	}
+	
+	"Menu_Spectate"
+	{
+		"en"		"Spectate"
+	}
+	
+	"Replay_BotNotInGame"
+	{
+		"#format"	"{1:d}"
+		"en"		"Select replay ({1} available)\n \nNo bots currently ingame for this category"
+	}
+	
+	"Replay_CategoryNotInConfig"
+	{
+		"#format"	"{1:d},{2:s},{3:s}"
+		"en"		"Select replay ({1} available)\nSpecifed replay category not available for any bots\nPlayer: {2}\nTime: {3}\n \n"
+	}
+	
+	"Replay_NoFile"
+	{
+		"#format"	"{1:d}"
+		"en"		"Select replay ({1} available)\n \nNo replays for this category\n \n "
+	}
+	
+	"Replay_OnlyCycleBot"
+	{
+		"#format"	"{1:d},{2:s},{3:s}"
+		"en"		"Select replay ({1} available)\nOnly cyclic bots can play this category\nPlayer: {2}\nTime: {3}\n \n"
+	}
+	
+	"Replay_Success"
+	{
+		"#format"	"{1:d},{2:s},{3:s}"
+		"en"		"Select replay ({1} available)\n \nPlayer: {2}\nTime: {3}\n \n"
+	}
+	
+	"Replay_InUse"
+	{
+		"#format"	"{1:d},{2:s},{3:s}"
+		"en"		"Select replay ({1} available)\nBot currently in use\nPlayer: {2}\nTime: {3}\n \n"
+	}
+	
+	"Replay_SpectateBot"
+	{
+		"en"		"Spectate the bot you played?"
+	}
+	
+	"Message_BotNotInGame"
+	{
+		"#format" 	"{1:s},{2:s}"
+	}
+	
+	"Message_BotInUsed"
+	{
+		"#format" 	"{1:s},{2:s}"
+		"en"		"{1}{2}Bot is currently being used."
+	}
+}

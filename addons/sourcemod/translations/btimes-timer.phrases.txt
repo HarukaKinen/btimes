@@ -1,0 +1,254 @@
+"Phrases"
+{
+	"AA Change"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"{1}{2}Your airacceleration has been changed to {3}{4}{5}."
+	}
+	
+	"ShowTimeFromMapName_Failed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Sorry, the selected map was not found in the database."
+	}
+	
+	"OverTake 1"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"{1}{2}You have lost {3}{4}{5} records since your last connection."
+	}
+	
+	"OverTake 2"
+	{
+		"en"	"Records Recently Stolen From You\n \n"
+	}
+	
+	"OverTake 3"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:s}"
+		"en"		"{1} by {2} ({3} - {4}{5}) \n Their Time: {6} \n Your Time: {7}"
+	}
+	
+	"SearchWr_Failed"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}{3}{4} is not a map found in the server's mapcycle."
+	}
+	
+	"ShowWorldRecordMenu"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1} world records for {2} timer {3}"
+	}
+	
+	"Default"
+	{
+		"en"		"Default"
+	}
+	
+	"ShowRecordList"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1} World Record List\nTimer: {2}\nStyle: {3}\nMode: {4}\n----------------------"
+	}
+	
+	"ShowRecordList_NoRecord"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}There aren't any times in that category."
+	}
+	
+	"Time_NotLoaded"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your PlayerID hasn't loaded yet, so your time can't be obtained."
+	}
+	
+	"Time_NoMapOrPlayer"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}No map or player found named {3}{4}"
+	}
+	
+	"OpenShowTimeMenu"
+	{
+		"en"		"Choose Time Category"
+	}
+	
+	"OpenStyleMenu"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} (Personalized)"
+	}
+	
+	"ChangeStyle"
+	{
+		"en"		"Change Style"
+	}
+	
+	"ChangeBonusStyle"
+	{
+		"en"		"Change Bonus Style"
+	}
+	
+	"NoclipSpeed"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:f},{5:s}"
+		"en"		"{1}{2}Noclip speed changed to {3}{4}{5}(Default is 1)"
+	}
+	
+	"NoclipSpeed_Error"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your noclip speed must be between 0 and 10"
+	}
+	
+	"NoclipRequest"
+	{
+		"en"		"Are you sure you want to noclip?\n "
+	}
+	
+	"Pause_Air"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You can't pause while in the air."
+	}
+	
+	"Pause_Paused"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You are already paused."
+	}
+	
+	"Pause_NoTimer"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You have no timer running."
+	}
+	
+	"Pause_StartZone"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You can't pause while inside a starting zone."
+	}
+	
+	"UnPause_NotPaused"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You are not currently paused."
+	}
+	
+	"fps_max_list"
+	{
+		"en"		"List of player fps_max values"
+	}
+	
+	"RR_CreateTimerSelection"
+	{
+		"en"		"Select Recent Records Timer Configuration"
+	}
+	
+	"RR_SelectPlayer"
+	{
+		"en"		"Select Player"
+	}
+	
+	"RR_SelectMap"
+	{
+		"en"		"Select Map"
+	}
+	
+	"RR_MapName"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} (Current map)"
+	}
+	
+	"RR_ActiveRecord"
+	{
+		"en"		"Show Only Active Records?"
+	}
+	
+	"Warning_MovementSpeed"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}Your movement speed is off. Type {3}!normalspeed{4} to set it to default."
+	}
+	
+	"Warning_Fpsmax"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:.1f},{5:s}"
+		"en"		"{1}{2}Please set your fps_max to a higher value (Minimum {3}{4}{5} )."
+	}
+	
+	"Warning_leftright"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your timer was stopped for using both +left and +right in one jump."
+	}	
+	
+	"Warning_noclip"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your timer was stopped for using noclip."
+	}	
+	
+	"SideWayAc"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}That time did not count because you used W-Only too much."
+	}
+
+	"FinishMessage_BeatRecord"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}{3}{4} beat the map record!"
+	}
+	
+	"FinishMessage_BeatRecord_FirstRecord"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:s},{8:s},{9:s},{10:s},{11:s},{12:s},{13:s},{14:s}"
+		"en"		"{1}{2}{3}{4} finished in {5}{6}{7} on {8}{9}{10} - {11}{12}{13}{14}."
+	}
+	
+	"FinishMessage_BeatRecord_OneShot"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:s},{8:s},{9:s},{10:s},{11:s},{12:s},{13:s},{14:s},{15:s},{16:s},{17:s}"
+		"en"		"{1}{2}{3}{4} finished in {5}{6}{7} (WR {8}-{9}{10}) on {11}{12}{13} - {14}{15}{16}{17}."
+	}
+	
+	"FinishMessage_BeatRecord_HasOldTime"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:s},{8:s},{9:s},{10:s},{11:s},{12:s},{13:s},{14:s},{15:s},{16:s},{17:s},{18:s},{19:s},{20:s}"
+		"en"		"{1}{2}{3}{4} finished in {5}{6}{7} (WR {8}-{9}{10}) on {11}{12}{13} - {14}{15}{16}{17}. Improving by {18}{19}{20}."
+	}
+	
+	"FinishMessage_Normal_FirstTime"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:s},{8:s},{9:s},{10:s},{11:s},{12:s},{13:s},{14:s},{15:s},{16:d},{17:s},{18:s},{19:d},{20:s}"
+		"en"		"{1}{2}{3}{4} finished in {5}{6}{7} on {8}{9}{10} - {11}{12}{13}{14}. Rank: {15}{16}{17} / {18}{19}{20}."
+	}
+	
+	"FinishMessage_Normal"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:s},{8:s},{9:s},{10:s},{11:s},{12:s},{13:s},{14:s},{15:s},{16:s},{17:s},{18:s},{19:d},{20:s},{21:s},{22:d},{23:s}"
+		"en"		"{1}{2}{3}{4} finished in {5}{6}{7} (PB: {8}-{9}{10}) on {11}{12}{13} - {14}{15}{16}{17}. Rank: {18}{19}{20} / {21}{22}{23}."
+	}
+
+	"FinishMessage_NoImprovement"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:s},{8:s},{9:s},{10:s},{11:s},{12:s},{13:s},{14:s},{15:s},{16:s},{17:s}"
+		"en"		"{1}{2}{3}{4} finished in {5}{6}{7} (PB: {8}+{9}{10}) on {11}{12}{13} - {14}{15}{16}{17}."
+	}
+	
+	"FinishMessage_PracticeMode"
+	{
+		"#format"  "{1:s},{2:s},{3:s},{4:s}{5:s},{6:s},{7:s},{8:s}{9:s},{10:s},{11:s}"
+		"en"	   "{1}{2}You Finished in {3}{4}{5} on {6}{7} - {8}{9} ({10}Practice Mode{11})."
+	}
+
+	"Close"
+	{
+		"en"		"Close"
+	}
+}

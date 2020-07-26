@@ -1,0 +1,31 @@
+"Chat Messages"
+{
+	"CS:S"
+	{
+		"Cstrike_Chat_CT_Loc"		"(Counter-Terrorist) {name} {def}:  {msg}"
+		"Cstrike_Chat_CT"			"(Counter-Terrorist) {name} {def}:  {msg}"
+		"Cstrike_Chat_T_Loc"		"(Terrorist) {name} {def}:  {msg}"
+		"Cstrike_Chat_T"			"(Terrorist) {name} {def}:  {msg}"
+		"Cstrike_Chat_CT_Dead"		"*DEAD*(Counter-Terrorist) {name} {def}:  {msg}"
+		"Cstrike_Chat_T_Dead"		"*DEAD*(Terrorist) {name} {def}:  {msg}"
+		"Cstrike_Chat_Spec"			"(Spectator) {name} {def}:  {msg}"
+		"Cstrike_Chat_All"			"{name} {def}:  {msg}"
+		"Cstrike_Chat_AllDead"		"*DEAD* {name} {def}:  {msg}"
+		"Cstrike_Chat_AllSpec"		"*SPEC* {name} {def}:  {msg}"
+	}
+
+	"CS:GO"
+	{
+		"Cstrike_Chat_CT_Loc"		"(Counter-Terrorist) {name} {colon}  {msg}"
+		"Cstrike_Chat_CT"			"(Counter-Terrorist) {name} {colon}  {msg}"
+		"Cstrike_Chat_T_Loc"		"(Terrorist) {name} {colon}  {msg}"
+		"Cstrike_Chat_T"			"(Terrorist) {name} {colon}  {msg}"
+		"Cstrike_Chat_CT_Dead"		"*DEAD*(Counter-Terrorist) {name} {colon}  {msg}"
+		"Cstrike_Chat_T_Dead"		"*DEAD*(Terrorist) {name} {colon}  {msg}"
+		"Cstrike_Chat_Spec"			"(Spectator) {name} {colon}  {msg}"
+		"Cstrike_Chat_All"			"{name} {colon}  {msg}"
+		"Cstrike_Chat_AllDead"		"*DEAD* {name} {colon}  {msg}"
+		"Cstrike_Chat_AllSpec"		"*SPEC* {name} {colon}  {msg}"
+	}
+
+}

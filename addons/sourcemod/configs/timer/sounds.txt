@@ -1,0 +1,41 @@
+"Sounds"
+{
+	"World Record" // Called when someone gets a record
+	{
+		"1"
+		{
+			"Position" "1" // The map position a player must get for this sound to play
+			"Sound"    "wr.mp3"
+		}
+		"2"
+		{
+			"Position" "2" // The map position a player must get for this sound to play
+			"Sound"    "2nd.mp3"
+		}
+		"3"
+		{
+			"Position" "3" // The map position a player must get for this sound to play
+			"Sound"    "3rd.mp3"
+		}
+	}
+	
+	"Personal Record" // Called when someone beats their own time
+	{
+		"1"
+		{
+			"Sound"    "finish.wav"
+		}
+		"2"
+		{
+			"Sound"    "break.wav"
+		}
+	}
+	
+	//"No New Time" // Called when someone doesn't beat their own time.
+	{
+		"1"
+		{
+			"Sound"    "finish.wav"
+		}
+	}
+}

@@ -1,0 +1,187 @@
+"Phrases"
+{
+	"KillRequest"
+	{
+		"en"		"Are you sure you want to kill yourself?\n "
+	}
+	
+	"Sound_Gun_Enabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Gun sounds enabled."
+	}
+	
+	"Sound_Gun_Disabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Gun sounds disabled."
+	}
+	
+	"Sound_Music_Enabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Music enabled."
+	}
+	
+	"Sound_Music_Disabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Music disabled."
+	}
+	
+	"SetSpeed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your speed must be between 0 and 100."
+	}
+	
+	"SetSpeed_Notification"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d.2f},{5:s}"
+		"en"		"{1}{2}Speed changed to {3}{4}{5} (Default is 1)."
+	}
+	
+	"SetSpeed_Example"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Example: sm_speed 2.0"
+	}
+	
+	"SetSpeed_Tas"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Can't use sm_speed command while in TAS mode."
+	}
+	
+	"LG_Tas"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You can't change your gravity in TAS mode."
+	}
+	
+	"LG_Low"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Using low gravity. Use !normalgrav to switch back to normal gravity."
+	}
+	
+	"LG_Normal"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Using normal gravity."
+	}
+	
+	"NoSlide_Toggle_Enabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Noslide is now enabled."
+	}
+	
+	"NoSlide_Toggle_Disabled"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Noslide is now disabled."
+	}
+	
+	"HideADs_On"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1}{2}Advertisements are now{3} hidden."
+	}
+	
+	"HideADs_Off"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1}{2}Advertisements are now{3} not hidden."
+	}
+	
+	"HidePlayer_Visible"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1}{2}Players are now{3} visible."
+	}
+	
+	"HidePlayer_Invisible"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1}{2}Players are now{3} invisible."
+	}
+	
+	"Spec_Notarget"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}{3}{4} has no spectators."
+	}
+	
+	"Spec_Specing"
+	{
+		"#format"	"{1:s}"
+		"en"		"Spectating {1}"
+	}
+	
+	"SpecInfo_NoTarget"
+	{
+		"#format" 	"{1:s},{2:s}"
+		"en"		"{1}{2}You are not spectating anyone."
+	}
+	
+	"ShowTrigger_On"
+	{
+		"#format" 	"{1:s},{2:s}"
+		"en"		"{1}{2}Showing trigger brushes."
+	}
+	
+	"ShowTrigger_Off"
+	{
+		"#format" 	"{1:s},{2:s}"
+		"en"		"{1}{2}Stopped Showing trigger brushes."
+	}
+	
+	"ShowClip_On"
+	{
+		"#format" 	"{1:s},{2:s}"
+		"en"		"{1}{2}Showing clip brushes."
+	}
+	
+	"ShowClip_Off"
+	{
+		"#format" 	"{1:s},{2:s}"
+		"en"		"{1}{2}Stopped Showing clip brushes."
+	}
+	
+	"Saved location"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Saved location. Next time when you spawn, you will teleport to the location which is saved just now."
+	}
+	
+	"Loaded location"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Loaded saved location."
+	}
+
+	"Notification_Join"
+	{
+		"#format"	"{1:s},{2:N},{3:s},{4:s},{5:s},{6:s}"
+		"en"		"{1}{2}{3}({4}{5}{6) has joined the server."
+	}
+		
+	"Notification_Disconnect"
+	{
+		"#format"	"{1:s},{2:N},{3:s}"
+		"en"		"{1}{2}{3} has left the server."
+	}
+	
+	"Notification_Spec"
+	{
+		"#format"	"{1:s},{2:N},{3:s}"
+		"en"		"{1}{2}{3} is now spectating."
+	}
+	
+	"Notification_Bhop"
+	{
+		"#format"	"{1:s},{2:N},{3:s}"
+		"en"		"{1}{2}{3} is now bhopping."
+	}
+}

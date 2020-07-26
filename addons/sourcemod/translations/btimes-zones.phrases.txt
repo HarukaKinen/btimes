@@ -1,0 +1,61 @@
+"Phrases"
+{
+	"Restart"
+	{
+ 		"en"		"Are you sure you want to restart?\n "
+	}
+	
+	"ZoneIsNotReady"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"en"		"{1}{2}The {3}{4}{5} is not ready yet."
+	}
+	
+	"MainEndZoneIsNotReady"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}The main end zone is not ready yet."
+	}
+	
+	"BonusEndZoneIsNotReady"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}The bonus end zone is not ready yet."
+	}
+	
+	"ZoneIsNotLoaded"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Currently loading zones. Please wait."
+	}
+	
+	"TimeStop"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your timer was stopped for using a shortcut."
+	}
+	
+	"TimeStop_ZoneDelete"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"en"		"{1}{2}Your timer was stopped because the {3}{4}{5} zone was deleted."
+	}
+	
+	"WarnClient_ZoneTrigger"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your timer won't start unless you enable triggers again in the Zones>Miscellaneous menu."
+	}
+	
+	"SetStartPosition_Main"
+	{
+		"#format"  "{1:s},{2:s}"
+		"en"	   "{1}{2}Your main start position has been set successfully."
+	}
+	
+	"SetStartPosition_Bonus"
+	{
+		"#format"  "{1:s},{2:s}"
+		"en"	   "{1}{2}Your bonus start position has been set successfully."
+	}
+}

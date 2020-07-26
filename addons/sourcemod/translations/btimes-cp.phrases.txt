@@ -1,0 +1,122 @@
+"Phrases"
+{
+	"TpTo_Cooldown"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:.1f},{5:s}"
+		"en"		"{1}{2}Wait {3}{4}{5} seconds to use tpto again."
+	}
+	
+	"TpTo_Target_Alive"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Target is not alive."
+	}
+	
+	"TpTo_Target_Yourself"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You can't target yourself."
+	}
+	
+	"TpTo_Target_InGame"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Target is not in game."
+	}
+	
+	"TpTo_Player_Alive"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You must be alive to use the sm_tpto command."
+	}
+	
+	"TpTo_Menu"
+	{
+		"en"		"Select player to teleport to"
+	}
+	
+	"CP_Titile"
+	{
+		"en"		"Checkpoint menu"
+	}
+	
+	"CP_Save"
+	{
+		"en"		"Save"
+	}
+	
+	"CP_Tele"
+	{
+		"en"		"Teleport"
+	}
+	
+	"CP_Delete"
+	{
+		"en"		"Delete"
+	}
+	
+	"CP_UsePos"
+	{
+		"en"		"Use position: "
+	}
+	
+	"CP_UseVel"
+	{
+		"en"		"Use velocity: "
+	}
+	
+	"CP_UseAng"
+	{
+		"en"		"Use angles: "
+	}
+	
+	"CP_Noclip"
+	{
+		"en"		"Noclip"
+	}
+	
+	"CP_Tele_Lastused"
+	{
+		"en"		"Last used"
+	}
+	
+	"CP_Tele_Lastsave"
+	{
+		"en"		"Last saved"
+	}
+	
+	"CP_Delete_NoCP"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You have no checkpoints saved."
+	}
+	
+	"CP_Message_Save"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"{1}{2}Checkpoint {3}{4}{5}saved."
+	}
+	
+	"CP_Message_Delete"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"{1}{2}Checkpoint {3}{4}{5}doesn't exist.."
+	}
+	
+	"CP_Message_Lastused"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You have no last used checkpoint."
+	}
+	
+	"CP_Message_Lastsaved"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You have no last saved checkpoint."
+	}
+	
+	"Delete"
+	{
+		"en"		"Delete"
+	}
+}

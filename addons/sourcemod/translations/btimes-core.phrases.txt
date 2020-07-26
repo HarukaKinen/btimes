@@ -1,0 +1,68 @@
+"Phrases"
+{
+	"Timer Info"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s}"
+		"en"		"{1}{2}Timer created by{3} blacky{4}. Modified by {5}Kotoki."
+	}
+	
+	"Reload Admin Config"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Reloaded the timer admin configuration."
+	}
+	
+	"Reload Admin Config Failed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Failed to reload the timer admin configuration."
+	}
+	
+	"THelp Console"
+	{
+		"en"		"[SM] Look in your console for timer command list."
+	}
+	
+	"THelp Next Page 1"
+	{
+		"#format"	"{1:s}"
+		"en"		"[SM] {1} 10 for the next page."
+	}
+	
+	"THelp Next Page 2"
+	{
+		"#format"	"{1:s},{2:d}"
+		"en"		"[SM] {1} {2} for the next page."
+	}
+	
+	"Search Error"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}sm_search must have a string to search with after it."
+	}
+	
+	"Timer Commands"
+	{
+		"en"		"Timer Commands"
+	}
+	
+	"Zones menu"
+	{
+		"en"		"Zones menu"
+	}
+	
+	"Buttons menu"
+	{
+		"en"		"Buttons menu"
+	}
+	
+	"Move menu"
+	{
+		"en"		"Move menu"
+	}
+	
+	"Delete times menu"
+	{
+		"en"		"Delete times menu"
+	}
+}

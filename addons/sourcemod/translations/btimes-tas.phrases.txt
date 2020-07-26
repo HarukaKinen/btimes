@@ -1,0 +1,90 @@
+"Phrases"
+{
+	"Tas_CP_USE"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You cannot use checkpoints on TAS mode."
+	}
+	
+	"Tas_CP_SAVED"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You cannot save checkpoints on TAS mode."
+	}
+	
+	
+	"Search Error"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}sm_search must have a string to search with after it."
+	}
+	
+	"Resume"
+	{
+		"en"		"Resume"
+	}
+	
+	"Pause"
+	{
+		"en"		"Pause"
+	}
+	
+	"Rewind"
+	{
+		"en"		"rewind"
+	}
+	
+	"FastForward"
+	{
+		"en"		"fastforward"
+	}
+	
+	"EditSpeed"
+	{
+		"en"		"Edit Speed"
+	}
+	
+	"Timescale"
+	{
+		"en"		"Timescale"
+	}
+	
+	"ExitTas"
+	{
+		"en"		"Exit TAS Mode"
+	}
+	
+	"TAS_Menu"
+	{
+		"en"		"Speedrun Assistant"
+	}
+	
+	"TAS_Enter"
+	{
+		"en"		"Enter TAS Mode"
+	}
+	
+	"TAS_Enter_Failed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You cannot use TAS on your current style."
+	}
+	
+	"TAS_PAUSE"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You cannot pause inside the start zone."
+	}
+	
+	"TAS_BUTTON_HOLD"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Hold your duck button and then unpause."
+	}
+	
+	"TAS_BUTTON_RELEASE"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Release your duck button and then unpause."
+	}
+}

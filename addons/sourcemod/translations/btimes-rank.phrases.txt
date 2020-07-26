@@ -1,0 +1,202 @@
+"Phrases"
+{
+	"RankOverall"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"{1}{2}You are ranked {3}{4}{5} overall."
+	}
+	
+	"RankOverall_NotRanked"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You are not yet ranked. If you want to get ranked you just need to finish a map!"
+	}
+	
+	"RankOverall_Rankup"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"{1}{2}You are now ranked {3}{4}{5}."
+	}
+	
+	"RankOverall_Derank"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s},{6:s},{7:d},{8:s}"
+		"en"		"{1}{2}You deranked from rank {3}{4}{5} to {6}{7}{8}."
+	}
+	
+	"RankStyle"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:d},{5:s}"
+		"en"		"{1}{2}You are ranked {3}{4}{5} on your current style."
+	}
+	
+	"RankStyle_NotRanked"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}You are not ranked on your current style yet."
+	}
+	
+	"Rank_IDHasntLoaded"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Your PlayerID hasn't loaded yet, so your rank can't be obtained."
+	}
+	
+	"Rank_TargetsIDHasntLoaded"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:N},{5:s}"
+		"en"		"{1}{2}The PlayerID for {3}{4}{5} has not been found yet."
+	}
+	
+	"Rank_CantFindPlayer"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s}"
+		"en"		"{1}{2}No player found named {3}{4}{5} has not been found yet."
+	}
+	
+	"ShowRank_Succeed"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:d},{7:s},{8:s},{9:d},{10:s},{11:s},{12:.0f},{13:s}"
+		"en"		"{1}{2}{3}{4} is ranked {5}{6}{7} out of {8}{9}{10} with {11}{12}{13} pts."
+	}
+	
+	"ShowRank_Failed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}The specified player is not ranked yet under the category you chose."
+	}
+	
+	"ShowTop_NoBodyRank"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Looks like there aren't any ranks yet on the server for the specified category."
+	}
+	
+	"Tier_Error"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}{3}{4} is not a valid map."
+	}
+
+	"Tier_Set"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:d},{7:s}"
+		"en"		"{1}{2}{3}{4} is a {5}T{6}{7} map."
+	}
+	
+	"Tier_NotSet"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}{3}{4} has no tier set yet."
+	}
+	
+	"Tier_Setup"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}'{3}'{4} is not a map nor a valid tier number (1-10)"
+	}
+	
+	"Tier_Error_Map"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}{3}{4} is not a map."
+	}
+	
+	"Tier_Error_Tier"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}'{3}'{4} is not a tier number. Tier values must be between between 1 and 10"
+	}
+	
+	"Tier_Menu_Title"
+	{
+		"#format"	"{1:s}"
+		"en"		"Set Map Tier: {1}"
+	}
+	
+	"Tier_Callback_Error"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:d},{7:s}"
+		"en"		"{1}{2}{3}{4} either is not a map in the database or its tier is already at {5}T{6}{7}."
+	}
+	
+	"Tier_Callback_Change"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s},{5:s},{6:s},{7:d},{8:s}"
+		"en"		"{1}{2} Map tier for {3}{4}{5} has been changed to {6}T{7}{8}."
+	}
+	
+	"Tier_Callback_Change_Point"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1}{2}Points will be recalculated now due to the tier change."
+	}
+	
+	"MapsDone_CreatePlayerListFromName"
+	{
+		"en"		"Select Player To Show Maps Done"
+	}
+	
+	"MapsDone_OpenMapsDoneMainMenu"
+	{
+		"en"		"Select Maps Done Settings"
+	}
+	
+	"MapsDone_Success_Main"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"Maps done for {1}\n{2} completed of {3} total\n "
+	}
+	
+	"MapsDone_Success_Bonus"
+	{
+		"#format"	"{1:s},{2:d}"
+		"en"		"Maps done for {1}\n{2} completed\n "
+	}
+	
+	"MapsDone_Success_NotCompleted"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"
+		"en"		"{1}{2}{3}{4} has not completed any maps."
+	}
+	
+	"Choose Rank Type"
+	{
+		"en"		"Choose Rank Type"
+	}
+	
+	"Choose Rank List Type"
+	{
+		"en"		"Choose Rank List Type"
+	}
+	
+	"Top Players by Record Count"
+	{
+		"en"		"Top Players by Record Count"
+	}
+	
+	"Overall"
+	{
+		"en"		"Overall\n "
+	}
+	
+	"Top Players"
+	{
+		"en"		"Top Players"
+	}
+	
+	"Bonus"
+	{
+		"en"		"Bonus"
+	}
+	
+	"Tier"
+	{
+		"en"		"Tier"
+	}
+	
+	"records"
+	{
+		"en"		"records"
+	}
+}
