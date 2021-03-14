@@ -1,12 +1,12 @@
 # Blacky's timer 2.0 - deadwinter's version
-Just a pasted modified timer that I abandoned to work on a while ago
+Just a pasted modified timer that I abandoned to work on a while ago. Made it public because I found it worth nothing to keep it private. Also fuck 93x shitty community :)
 
 # Credit 
 shavit and slidy for the code that I pasted
 
 blank, sevve, pow for ideas and motivation
 
-and some people that I fotget :D
+and some people that I forget :D
 
 # How to install
 1. Compile the plugins you need from source
@@ -15,8 +15,9 @@ and some people that I fotget :D
 4. Profit!
 
 # Requirement
-[DHooks](http://users.alliedmods.net/~drifter/builds/dhooks/2.1/)
+- [DHooks](https://github.com/peace-maker/DHooks2/releases/latest)
 
 ### Optional (for discord message etc.)
-[SteamWorks](https://forums.alliedmods.net/showthread.php?t=229556)
-[smjansson](https://forums.alliedmods.net/showthread.php?t=184604)
+- [SteamWorks](https://forums.alliedmods.net/showthread.php?t=229556)
+
+- [smjansson](https://forums.alliedmods.net/showthread.php?t=184604)
