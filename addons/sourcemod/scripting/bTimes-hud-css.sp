@@ -820,3 +820,4 @@ public int HudMenu_Handle(Menu menu, MenuAction action, int client, int param2)
         delete menu;
     }
 }
+

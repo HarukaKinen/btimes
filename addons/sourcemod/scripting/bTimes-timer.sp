@@ -73,9 +73,9 @@ ArrayList g_hSound_Path_Fail;
 
 float g_fPauseTime[MAXPLAYERS + 1];
 float g_fPausePos[MAXPLAYERS + 1][3];
-    
+
 float g_Fps[MAXPLAYERS + 1];
-    
+
 // Warning
 float g_fWarningTime[MAXPLAYERS + 1];
 
@@ -424,7 +424,7 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
     g_fwdOnTimerStart_Pre     = CreateGlobalForward("OnTimerStart_Pre", ET_Hook, Param_Cell, Param_Cell, Param_Cell, Param_Cell);
     g_fwdOnTimerStart_Post    = CreateGlobalForward("OnTimerStart_Post", ET_Event, Param_Cell, Param_Cell, Param_Cell, Param_Cell);
     g_fwdOnTimerFinished_Pre  = CreateGlobalForward("OnTimerFinished_Pre", ET_Hook, Param_Cell, Param_Cell, Param_Cell, Param_Float);
-    g_fwdOnTimerFinished_Post = CreateGlobalForward("OnTimerFinished_Post", ET_Event, Param_Cell, Param_Float, Param_Cell, Param_Cell, Param_Cell, Param_Cell, Param_Cell, Param_Cell);
+    g_fwdOnTimerFinished_Post = CreateGlobalForward("OnTimerFinished_Post", ET_Event, Param_Cell, Param_Float, Param_Cell, Param_Cell, Param_Cell, Param_Cell, Param_Float, Param_Cell, Param_Cell, Param_Cell, Param_Cell, Param_Float, Param_Float);
     g_fwdOnTimerStopped       = CreateGlobalForward("OnTimerStopped", ET_Event, Param_Cell);
     g_fwdOnTimesDeleted       = CreateGlobalForward("OnTimesDeleted", ET_Event, Param_String, Param_Cell, Param_Cell, Param_Cell, Param_Cell, Param_Cell);
     g_fwdOnTimesUpdated       = CreateGlobalForward("OnTimesUpdated", ET_Event, Param_String, Param_Cell, Param_Cell, Param_Cell, Param_Any);
@@ -3443,7 +3443,7 @@ public Action OnTimerFinished_Pre(int client, int Type, int style)
     return Plugin_Continue;
 }
 
-public void OnTimerFinished_Post(int client, float time, int type, int style, bool tas, bool NewTime, int OldPosition, int NewPosition)
+public void OnTimerFinished_Post(int client, float time, int type, int style, int jumps, int strafes, float sync, bool tas, bool NewTime, int OldPosition, int NewPosition, float fOldTime, float fOldWrTime)
 {
     PlayFinishSound(client, NewTime, NewPosition, type, style, tas);
 }
@@ -3497,7 +3497,7 @@ public int Native_FinishTimer(Handle plugin, int numParams)
         {
             newTime = true;
             
-            if( !Timer_IsPlayerInTimerbanList( client ) )
+            if(!Timer_IsPlayerInTimerbanList(client))
             {
                 if(!g_bPlayerHasTime[client][Type][style][tas])
                 {
@@ -3516,17 +3516,22 @@ public int Native_FinishTimer(Handle plugin, int numParams)
             }
         }
 
-        if( !Timer_IsPlayerInTimerbanList( client ) )
+        if(!Timer_IsPlayerInTimerbanList(client))
         {
             Call_StartForward(g_fwdOnTimerFinished_Post);
             Call_PushCell(client);
             Call_PushFloat(fTime);
             Call_PushCell(Type);
             Call_PushCell(style);
+            Call_PushCell(jumps);
+            Call_PushCell(strafes);
+            Call_PushFloat(sync);
             Call_PushCell(tas);
             Call_PushCell(newTime);
             Call_PushCell(oldPosition);
             Call_PushCell(newPosition);
+            Call_PushFloat(fOldTime);
+            Call_PushFloat(fOldWRTime);
             Call_Finish();
         }
 

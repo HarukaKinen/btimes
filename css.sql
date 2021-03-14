@@ -154,13 +154,16 @@ CREATE TABLE `zones` (
   `point10` double DEFAULT NULL,
   `point11` double DEFAULT NULL,
   `point12` double DEFAULT NULL,
+  `destination_x` double DEFAULT NULL,
+  `destination_y` double DEFAULT NULL,
+  `destination_z` double DEFAULT NULL,
   `unrestrict` int(11) NOT NULL DEFAULT '0',
   `ezhop` int(11) NOT NULL DEFAULT '0',
   `autohop` int(11) NOT NULL DEFAULT '0',
   `nolimit` int(11) NOT NULL DEFAULT '0',
   `actype` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`RowID`)
-) ENGINE=MyISAM AUTO_INCREMENT=6724 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Procedure structure for AddPlayerTime

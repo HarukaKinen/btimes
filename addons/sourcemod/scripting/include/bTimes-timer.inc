@@ -450,7 +450,6 @@ methodmap Style
 	
 	// Style Translation
 	public native void GetTranslation(char[] name, int maxlength);
-
 	
 	public void SetTranslation(char[] trans, int maxlength)
 	{
@@ -881,11 +880,16 @@ forward Action OnTimerFinished_Pre(int client, int Type, int style, float time);
 * @param Type          The player's timer type.
 * @param Style         The player's timer style.
 * @param tas           Whether or not the player was using tas.
+* @param jumps         A counter for jump.
+* @param strafe        A counter for strafe.
+* @param sync          Total sync in this run.
 * @param NewTime       true if it's a new time, false otherwise.
 * @param OldPosition   The player's position before finishing the map.
 * @param NewPosition   The player's position after finishing the map.
+* @param fOldTime	   Old player time
+* @param fOldWRTime	   Old WR time
 */
-forward void OnTimerFinished_Post(int client, float Time, int Type, int style, bool tas, bool NewTime, int OldPosition, int NewPosition);
+forward void OnTimerFinished_Post(int client, float time, int type, int style, int jumps, int strafes, float sync, bool tas, bool NewTime, int OldPosition, int NewPosition, float fOldTime, float fOldWrTime);
 
 /*
 * Called when their is an attempt to start a client's timer.
@@ -967,6 +971,8 @@ forward void OnStyleChanged(int client, int oldStyle, int newStyle, int type);
 * @param NewTime       true if it's a new time, false otherwise.
 * @param OldPosition   The player's position before finishing the map.
 * @param NewPosition   The player's position after finishing the map.
+* @param fOldTime	   Old player time
+* @param fOldWRTime	   Old WR time
 * @param msg           The message to print to chat
 * @param maxlen        The max length of the message 
 */

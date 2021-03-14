@@ -1,0 +1,21 @@
+{
+	"label": "Compile plugin",
+	"type": "shell",
+	"presentation": {
+		"panel": "new"
+	},
+	"windows": {
+		"command": "D:/Workspace/btimes/addons/sourcemod/scripting/spcomp.exe"
+	},
+	"args": [
+		"${file}",
+		"-v2",
+		"-i${workspaceFolder}/scripting/include/",
+		"-oD:/cssserver/cstrike/addons/sourcemod/plugins/blackys/${fileBasenameNoExtension}.smx"
+	],
+	"group": {
+		"kind": "build",
+		"isDefault": true
+	},
+	"problemMatcher": []
+}

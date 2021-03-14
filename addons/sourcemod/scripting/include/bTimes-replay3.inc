@@ -10,10 +10,10 @@
 #define REPLAY_DATA_ANG_0 3
 #define REPLAY_DATA_ANG_1 4
 #define REPLAY_DATA_BTN   5
-#define REPLAY_DATA_MT    6
-#define REPLAY_DATA_FLG   7
-#define REPLAY_DATA_WEP   8
-#define REPLAY_FRAME_SIZE 9
+//#define REPLAY_DATA_MT    6
+//#define REPLAY_DATA_FLG   7
+//#define REPLAY_DATA_WEP   8
+#define REPLAY_FRAME_SIZE 6
 
 // Bot config
 #define MAX_BOTS 32 // Max number of bots allowed in the config

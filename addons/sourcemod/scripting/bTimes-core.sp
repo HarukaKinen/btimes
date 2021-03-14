@@ -489,6 +489,14 @@ public Action SM_TimerBanList_Reload(int client, int args)
     if(LoadTimerBanList())
     {
         PrintColorText(client, "%sReloaded timerban file successfully.", g_msg_textcol);
+        char useless[64];
+        // Make it come into effect immediately
+        for(int i = 1; i < MaxClients; i++)
+        {
+            if(IsFakeClient(i))
+                continue;
+            OnClientAuthorized(i, useless);
+        }
     }
     else 
     {

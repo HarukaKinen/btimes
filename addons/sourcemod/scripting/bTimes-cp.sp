@@ -554,26 +554,26 @@ void SaveCheckpoint(int client, int index = -1)
         g_smClassnames.SetValue( buffer, cp[CP_Classname] );
     }
 
-    if(!(Style(TimerInfo( target ).ActiveStyle).HasSpecialKey("climb")))
+    if(!(Style(TimerInfo(client).ActiveStyle).HasSpecialKey("climb")))
     {
-        if ( g_bReplay3Loaded && Replay_GetPlayerRecordingHandle( target ) && IsInSegmentedMode( target ) )
+        if ( g_bReplay3Loaded && Replay_GetPlayerRecordingHandle( client ) && IsInSegmentedMode( client ) )
         {
-            cp[CP_ReplayFrames] = Replay_GetPlayerRecordingHandle( target );
-            Replay_GetPlayerStartTicks( target, cp[CP_ReplayStartFrame], cp[CP_ReplayTimerStartFrame] );
+            cp[CP_ReplayFrames] = Replay_GetPlayerRecordingHandle( client );
+            Replay_GetPlayerStartTicks( client, cp[CP_ReplayStartFrame], cp[CP_ReplayTimerStartFrame] );
         }
         else 
         {
             cp[CP_ReplayFrames] = null;
         }
 
-        cp[TimerInfo_Time]  = TimerInfo( target ).CurrentTime;
-        cp[TimerInfo_GoodSync] = TimerInfo( target ).GoodSync;
-        cp[TimerInfo_TotalSync] = TimerInfo( target ).TotalSync;
-        cp[TimerInfo_Jumps] = TimerInfo( target ).Jumps;
-        cp[TimerInfo_Strafes] = TimerInfo( target ).Strafes;
-        cp[TimerInfo_IsTiming] = TimerInfo( target ).IsTiming;
-        cp[TimerInfo_Style] = TimerInfo( target ).ActiveStyle;
-        cp[TimerInfo_Type] = TimerInfo( target ).Type;
+        cp[TimerInfo_Time]  = TimerInfo( client ).CurrentTime;
+        cp[TimerInfo_GoodSync] = TimerInfo( client ).GoodSync;
+        cp[TimerInfo_TotalSync] = TimerInfo( client ).TotalSync;
+        cp[TimerInfo_Jumps] = TimerInfo( client ).Jumps;
+        cp[TimerInfo_Strafes] = TimerInfo( client ).Strafes;
+        cp[TimerInfo_IsTiming] = TimerInfo( client ).IsTiming;
+        cp[TimerInfo_Style] = TimerInfo( client ).ActiveStyle;
+        cp[TimerInfo_Type] = TimerInfo( client ).Type;
     }
     g_aCheckpoints[client].SetArray( index, cp[0] );
 
