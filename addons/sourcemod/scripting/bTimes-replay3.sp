@@ -467,7 +467,6 @@ public void CleanRecordingHandleOnNextFrame(int userid)
 {
     int client = GetClientOfUserId(userid);
     delete g_hRecording[client];
-    g_hRecording[client] = null;
 }
 
 int g_LastButtons[MAXPLAYERS + 1];
@@ -481,7 +480,7 @@ void ApplyFlags(int &flags1, int flags2, int flag)
 
     else
     {
-        flags2 &= ~flag;
+        flags1 &= ~flag;
     }
 }
 
@@ -588,7 +587,7 @@ public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3
                 MakeVectorFromPoints(vCurrentPos, vPos, vVel);
                 ScaleVector(vVel, 1.0/GetTickInterval());
 
-                if(currentFrame == 0 || currentFrame == g_Replay_Data[type][style][tas].Length - 1)
+                if(currentFrame == 0)
                     TeleportEntity(client, vPos, vAng, view_as<float>({0.0, 0.0, 0.0}));
                 else
                     TeleportEntity(client, NULL_VECTOR, vAng, vVel);
@@ -768,7 +767,7 @@ public void OnTimerStart_Post(int client, int Type, int style, int Method)
     }
 }
 
-public void OnTimerFinished_Post(int client, float time, int type, int style, bool tas, bool NewTime, int OldPosition, int NewPosition)
+public void OnTimerFinished_Post(int client, float time, int type, int style, int jumps, int strafes, float sync, bool tas, bool NewTime, int OldPosition, int NewPosition, float fOldTime, float fOldWRTime)
 {
     if(!g_hRecording[client])
     {
