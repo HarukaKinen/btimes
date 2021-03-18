@@ -62,11 +62,18 @@ public void OnConfigsExecuted()
     char discord_bot_token[256];
     g_hDiscordToken_Bot.GetString(discord_bot_token, sizeof(discord_bot_token));
 
-    if(!g_Bot)
-        g_Bot = new DiscordBot(discord_bot_token);
+    if(strlen(discord_bot_token) > 0)
+    {
+        if(!g_Bot)
+            g_Bot = new DiscordBot(discord_bot_token);
 
-    g_Bot.MessageCheckInterval = 0.1;
-    g_Bot.GetGuilds(GuildList);
+        g_Bot.MessageCheckInterval = 0.1;
+        g_Bot.GetGuilds(GuildList);
+    }
+    else 
+    {
+        SetFailState("Discord bot token is empty");
+    }
 }
 
 public void OnAllPluginsLoaded() 
@@ -88,12 +95,20 @@ public void OnMapStart()
     char event_webhook_url[512];
     g_hDiscordUrl_Webhook_Event.GetString(event_webhook_url, sizeof(event_webhook_url));
 
-    DiscordWebHook hook = new DiscordWebHook(event_webhook_url);
-    hook.SlackMode = true;
-    hook.SetUsername("Map changed");
-    hook.SetContent(discord_message);
-    hook.Send();
+    if(strlen(event_webhook_url) > 0)
+    {
+        DiscordWebHook hook = new DiscordWebHook(event_webhook_url);
+        hook.SlackMode = true;
+        hook.SetUsername("Map changed");
+        hook.SetContent(discord_message);
+        hook.Send();
+    }
+    else 
+    {
+        PrintToServer("Event webhook url is empty, if you want to use it please set the url in /cfg/sourcemod/discord.cfg");
+    }
 }
+
 
 public void GuildList(DiscordBot bot, char[] id, char[] name, char[] icon, bool owner, int permissions, any data) 
 {
@@ -110,7 +125,7 @@ public void ChannelList(DiscordBot bot, char[] guild, DiscordChannel Channel, an
         char chatlog_id[32];
         g_hChannelID_ChatLog.GetString(chatlog_id, 32);
 
-        if(StrEqual(id, chatlog_id))
+        if(StrEqual(id, chatlog_id) && strlen(chatlog_id) > 0)
         {
             g_Bot.StartListeningToChannel(Channel, OnMessage);
         }        
@@ -147,15 +162,22 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
     char chat_webhook_url[512];
     g_hDiscordUrl_Webhook_Chat.GetString(chat_webhook_url, sizeof(chat_webhook_url));
 
-    DiscordWebHook hook = new DiscordWebHook(chat_webhook_url);
-    hook.SlackMode = true;
-    hook.SetUsername(sName);
+    if(strlen(chat_webhook_url) > 0)
+    {
+        DiscordWebHook hook = new DiscordWebHook(chat_webhook_url);
+        hook.SlackMode = true;
+        hook.SetUsername(sName);
 
-    char discord_message[512];
-    FormatEx(discord_message, sizeof(discord_message), "[%N](https://steamcommunity.com/profiles/[U:1:%s]): %s", client, GetSteamAccountID(client));
+        char discord_message[512];
+        FormatEx(discord_message, sizeof(discord_message), "[%N](https://steamcommunity.com/profiles/[U:1:%i]): %s", client, GetSteamAccountID(client), sArgs);
 
-    hook.SetContent(discord_message);
-    hook.Send();
+        hook.SetContent(discord_message);
+        hook.Send();
+    }
+    else 
+    {
+        PrintToServer("Chat webhook url is empty, if you want to use it please set the url in /cfg/sourcemod/discord.cfg");
+    }
 }
 
 public void OnClientPutInServer(int client)
@@ -172,15 +194,22 @@ public void OnClientPutInServer(int client)
     char event_webhook_url[512];
     g_hDiscordUrl_Webhook_Event.GetString(event_webhook_url, sizeof(event_webhook_url));
 
-    DiscordWebHook hook = new DiscordWebHook(event_webhook_url);
-    hook.SlackMode = true;
-    hook.SetUsername("Player joined");
+    if(strlen(event_webhook_url) > 0)
+    {
+        DiscordWebHook hook = new DiscordWebHook(event_webhook_url);
+        hook.SlackMode = true;
+        hook.SetUsername("Player joined");
 
-    char discord_message[512];
-    FormatEx(discord_message, sizeof(discord_message), "[%s] Player [%N](https://steamcommunity.com/profiles/[U:1:%s]) joined the server.", sDate, client, GetSteamAccountID(client));
+        char discord_message[512];
+        FormatEx(discord_message, sizeof(discord_message), "[%s] Player [%N](https://steamcommunity.com/profiles/[U:1:%s]) joined the server.", sDate, client, GetSteamAccountID(client));
 
-    hook.SetContent(discord_message);
-    hook.Send();
+        hook.SetContent(discord_message);
+        hook.Send();
+    }
+    else 
+    {
+        PrintToServer("Event webhook url is empty, if you want to use it please set the url in /cfg/sourcemod/discord.cfg");
+    }
 }
 
 public Action Event_PlayerDisconnect(Event event, const char[] name, bool dontBroadcast)
@@ -201,16 +230,22 @@ public Action Event_PlayerDisconnect(Event event, const char[] name, bool dontBr
     char event_webhook_url[512];
     g_hDiscordUrl_Webhook_Event.GetString(event_webhook_url, sizeof(event_webhook_url));
 
-    DiscordWebHook hook = new DiscordWebHook(event_webhook_url);
-    hook.SlackMode = true;
-    hook.SetUsername("Player left");
+    if(strlen(event_webhook_url) > 0)
+    {
+        DiscordWebHook hook = new DiscordWebHook(event_webhook_url);
+        hook.SlackMode = true;
+        hook.SetUsername("Player left");
 
-    char discord_message[512];
-    FormatEx(discord_message, sizeof(discord_message), "[%s] Player [%N](https://steamcommunity.com/profiles/[U:1:%s]) left the server.", sDate, client, GetSteamAccountID(client));
+        char discord_message[512];
+        FormatEx(discord_message, sizeof(discord_message), "[%s] Player [%N](https://steamcommunity.com/profiles/[U:1:%s]) left the server.", sDate, client, GetSteamAccountID(client));
 
-    hook.SetContent(discord_message);
-    hook.Send();
-
+        hook.SetContent(discord_message);
+        hook.Send();
+    }
+    else 
+    {
+        PrintToServer("Event webhook url is empty, if you want to use it please set the url in /cfg/sourcemod/discord.cfg");
+    }
     return Plugin_Continue;
 }
 
@@ -235,57 +270,61 @@ public void OnTimerFinished_Post(int client, float time, int type, int style, in
             char record_webhook_url[512];
             g_hDiscordUrl_Webhook_Record.GetString(record_webhook_url, sizeof(record_webhook_url));
 
-            char record_username[256];
-            g_hWebhook_Username.GetString(record_username, sizeof(record_username));
-            DiscordWebHook hook = new DiscordWebHook(record_webhook_url);
-            hook.SlackMode = true;
-            hook.SetUsername(record_username);
-            
-            MessageEmbed embed = new MessageEmbed();
-
-            char recordinfo_color_bonus[16], recordinfo_color_main[16];
-            g_hRecordInfo_Color_Main.GetString(recordinfo_color_main, 16);
-            g_hRecordInfo_Color_Bonus.GetString(recordinfo_color_bonus, 16);
-
-            embed.SetColor((type == TIMER_BONUS) ? recordinfo_color_bonus : recordinfo_color_main);
-
-            char buffer[512];
-            Format(buffer, sizeof(buffer), "__**New %s World Record**__ | __**%s**__ - __**%s**__", g_sMapName, sType, sStyle);
-            embed.SetTitle(buffer);
-
-            Format(buffer, sizeof(buffer), "[%N](https://steamcommunity.com/profiles/[U:1:%i])", client, GetSteamAccountID(client));
-            embed.AddField("Player: ", buffer, true);
-
-            if(!fOldWRTime)
+            if(strlen(record_webhook_url) > 0)
             {
-                embed.AddField("Time: ", sTime, true);
-            }
-            else 
-            {
-                float oldwrdiff = FloatAbs(fOldWRTime - time);
-                char sWRTimeDiff[32];
-                FormatPlayerTime(oldwrdiff, sWRTimeDiff, sizeof(sWRTimeDiff), 2);
-                Format(buffer, sizeof(buffer), "%s(-%s)", sTime, sWRTimeDiff);
-                embed.AddField("Time:", buffer, true);
-            }
-            
-            Format(buffer, sizeof(buffer), "**Strafes**: %i\t\t\t\t\t\t**Sync**: %.2f%%\t\t\t\t\t\t**Jumps**: %i", strafes, sync, jumps);
-            embed.AddField("Stats:", buffer, true);
-            
-            char thumbnail_url[512], footericon_url[512];
-            g_hDiscordUrl_Webhook_Record_Thumbnail.GetString(thumbnail_url, 512);
-            g_hDiscordUrl_Webhook_Record_FooterIcon.GetString(footericon_url, 512);
 
-            if(strlen(thumbnail_url) > 0)
-                embed.SetThumb(thumbnail_url);
-            
-            if(strlen(footericon_url) > 0)
-                embed.SetFooterIcon(footericon_url);
-            
-            Format(buffer, sizeof(buffer), "Server: %s", server_name);
-            embed.SetFooter(buffer);
-            hook.Embed(embed);
-            hook.Send();
+                char record_username[256];
+                g_hWebhook_Username.GetString(record_username, sizeof(record_username));
+                DiscordWebHook hook = new DiscordWebHook(record_webhook_url);
+                hook.SlackMode = true;
+                hook.SetUsername(strlen(record_username) > 0 ? record_username : "Server record");
+                
+                MessageEmbed embed = new MessageEmbed();
+
+                char recordinfo_color_bonus[16], recordinfo_color_main[16];
+                g_hRecordInfo_Color_Main.GetString(recordinfo_color_main, 16);
+                g_hRecordInfo_Color_Bonus.GetString(recordinfo_color_bonus, 16);
+
+                embed.SetColor((type == TIMER_BONUS) ? recordinfo_color_bonus : recordinfo_color_main);
+
+                char buffer[512];
+                Format(buffer, sizeof(buffer), "__**New %s World Record**__ | __**%s**__ - __**%s**__", g_sMapName, sType, sStyle);
+                embed.SetTitle(buffer);
+
+                Format(buffer, sizeof(buffer), "[%N](https://steamcommunity.com/profiles/[U:1:%i])", client, GetSteamAccountID(client));
+                embed.AddField("Player: ", buffer, true);
+
+                if(!fOldWRTime)
+                {
+                    embed.AddField("Time: ", sTime, true);
+                }
+                else 
+                {
+                    float oldwrdiff = FloatAbs(fOldWRTime - time);
+                    char sWRTimeDiff[32];
+                    FormatPlayerTime(oldwrdiff, sWRTimeDiff, sizeof(sWRTimeDiff), 2);
+                    Format(buffer, sizeof(buffer), "%s(-%s)", sTime, sWRTimeDiff);
+                    embed.AddField("Time:", buffer, true);
+                }
+                
+                Format(buffer, sizeof(buffer), "**Strafes**: %i\t\t\t\t\t\t**Sync**: %.2f%%\t\t\t\t\t\t**Jumps**: %i", strafes, sync, jumps);
+                embed.AddField("Stats:", buffer, true);
+                
+                char thumbnail_url[512], footericon_url[512];
+                g_hDiscordUrl_Webhook_Record_Thumbnail.GetString(thumbnail_url, 512);
+                g_hDiscordUrl_Webhook_Record_FooterIcon.GetString(footericon_url, 512);
+
+                if(strlen(thumbnail_url) > 0)
+                    embed.SetThumb(thumbnail_url);
+                
+                if(strlen(footericon_url) > 0)
+                    embed.SetFooterIcon(footericon_url);
+                
+                Format(buffer, sizeof(buffer), "Server: %s", server_name);
+                embed.SetFooter(buffer);
+                hook.Embed(embed);
+                hook.Send();
+            }
         }
     }
 }
