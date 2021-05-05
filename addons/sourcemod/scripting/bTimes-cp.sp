@@ -601,11 +601,6 @@ void DeleteCheckpoint(int client, int index)
 void TeleportToCheckpoint(int client, int index)
 {
     index = g_iSelectedCheckpoint[client];
-    
-    if( !IsInSegmentedMode( client ) )
-    {
-        g_bUsedCP[client] = true;
-    }
 
     any cp[Checkpoint];
     
@@ -666,7 +661,14 @@ void TeleportToCheckpoint(int client, int index)
         TimerInfo(client).Strafes         = cp[TimerInfo_Strafes];
         TimerInfo(client).IsTiming        = cp[TimerInfo_IsTiming];
         TimerInfo(client).SetStyle(cp[TimerInfo_Type], cp[TimerInfo_Style]);
+        TimerInfo(client).Type         = cp[TimerInfo_Type];
     }
+
+    if( !IsInSegmentedMode( client ))
+    {
+        g_bUsedCP[client] = true;
+    }
+
     if( GetCookieBool( client, g_hCPCookie_Message ) )
         PrintColorText( client, "%s%sTeleported to Checkpoint (#%s%i%s)", g_msg_start, g_msg_textcol, g_msg_varcol, ( index + 1 ), g_msg_textcol );
 }
